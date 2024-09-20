@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {}
+    "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {
+    "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
         "projectName": "MovieReservation.CORE",
-        "projectPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
-        "packagesPath": "C:\\Users\\ilahaah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ilahaah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

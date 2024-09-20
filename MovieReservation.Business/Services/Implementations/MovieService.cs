@@ -38,7 +38,7 @@ public class MovieService : IMovieService
     public async Task DeleteAsync(int id)
     {
         if (id < 1) throw new InvalidIdException();
-        var data = await _movieRepo.GetByExpressionAsync(x => x.Id == id, false, null).FirstOrDefaultAsync();
+        var data = await _movieRepo.GetByIdAsync(id);
         if (data == null) throw new EntityNotFoundException();          
 
         _movieRepo.DeleteAsync(data);

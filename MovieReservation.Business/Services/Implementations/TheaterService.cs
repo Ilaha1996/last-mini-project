@@ -42,30 +42,48 @@ public class TheaterService : ITheaterService
 
         _theaterRepo.DeleteAsync(data);
         await _theaterRepo.CommitAsync();
-    }
+    }  
 
-    public async Task<ICollection<TheaterGetDto>> GetByExpressionAsync(Expression<Func<Movie, bool>>? expression = null, bool asNoTracking = false, params string[] includes)
+    public async Task<ICollection<TheaterGetDto>> GetByExpressionAsync(Expression<Func<Theater, bool>>? expression = null, bool asNoTracking = false, params string[] includes)
     {
-        var datas = await _theaterRepo.GetByExpressionAsync().ToListAsync();
+        var datas = await _theaterRepo.GetByExpressionAsync(expression, asNoTracking, includes).ToListAsync();
         if (datas == null) throw new EntityNotFoundException();
 
-        ICollection<MovieGetDto> dtos = _mapper.Map<ICollection<MovieGetDto>>(datas);
+        ICollection<TheaterGetDto> dtos = _mapper.Map<ICollection<TheaterGetDto>>(datas);
         return dtos;
-      
     }
 
     public async Task<TheaterGetDto> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        if (id < 1) throw new InvalidIdException();
+        var data = await _theaterRepo.GetByIdAsync(id);
+        if (data == null) throw new EntityNotFoundException();
+
+        TheaterGetDto dto = _mapper.Map<TheaterGetDto>(data);
+        
+        return dto;
     }
 
-    public async Task<TheaterGetDto> GetSingleByExpressionAsync(Expression<Func<Movie, bool>>? expression = null, bool asNoTracking = false, params string[] includes)
+    public async Task<TheaterGetDto> GetSingleByExpressionAsync(Expression<Func<Theater, bool>>? expression = null, bool asNoTracking = false, params string[] includes)
     {
-        throw new NotImplementedException();
+        var data = await _theaterRepo.GetByExpressionAsync(expression, asNoTracking, includes).FirstOrDefaultAsync();
+        if (data == null) throw new EntityNotFoundException();
+
+        TheaterGetDto dto = _mapper.Map<TheaterGetDto>(data);
+
+        return dto;
     }
 
     public async Task UpdateAsync(int? id, TheaterUpdateDto dto)
     {
-        throw new NotImplementedException();
+        if (id < 1 || id is null) throw new InvalidIdException();
+
+        var data = await _theaterRepo.GetByIdAsync((int)id);
+        if (data == null) throw new EntityNotFoundException();
+
+        _mapper.Map(dto, data);
+
+        data.UpdatedDate = DateTime.Now;
+        await _theaterRepo.CommitAsync();
     }
 }

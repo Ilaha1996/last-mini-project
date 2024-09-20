@@ -8,5 +8,5 @@ public class ShowTime:BaseEntity
     public DateTime EndTime { get; set; }
     public Movie Movie { get; set; }
     public Theater Theater { get; set; }
-    public ICollection<Reservation> Reservations { get; set; }
+    public ICollection<Reservation>? Reservations { get; set; }
 }

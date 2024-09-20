@@ -4,6 +4,6 @@ namespace MovieReservation.CORE.Entities;
 
 public class AppUser : IdentityUser
 {   
-    public string Fulname { get; set; }
-    public ICollection<Reservation> Reservations { get; set; }
+    public string Fullname { get; set; }
+    public ICollection<Reservation>? Reservations { get; set; }
 }

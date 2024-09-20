@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\last-mini-project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|c:\\users\\ilahaah\\desktop\\last-mini-project\\moviereservation.business\\services\\implementations\\theaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|solutionrelative:moviereservation.business\\services\\implementations\\theaterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|c:\\users\\user\\desktop\\last-mini-project\\moviereservation.business\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|solutionrelative:moviereservation.business\\services\\interfaces\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|c:\\users\\ilahaah\\desktop\\last-mini-project\\moviereservation.business\\services\\implementations\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|c:\\users\\user\\desktop\\last-mini-project\\moviereservation.business\\services\\implementations\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|solutionrelative:moviereservation.business\\services\\implementations\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|c:\\users\\user\\desktop\\last-mini-project\\moviereservation.business\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|solutionrelative:moviereservation.business\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|c:\\users\\user\\desktop\\last-mini-project\\moviereservation.business\\services\\implementations\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AA57E7F-EEF9-4C89-BA1E-85EAE9183116}|MovieReservation.Business\\MovieReservation.Business.csproj|solutionrelative:moviereservation.business\\services\\implementations\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9D06075-0797-4398-88D4-BDF56D4070F7}|MovieReserv.API\\MovieReserv.API.csproj|c:\\users\\ilahaah\\desktop\\last-mini-project\\moviereserv.api\\controllers\\theaterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9D06075-0797-4398-88D4-BDF56D4070F7}|MovieReserv.API\\MovieReserv.API.csproj|solutionrelative:moviereserv.api\\controllers\\theaterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9D06075-0797-4398-88D4-BDF56D4070F7}|MovieReserv.API\\MovieReserv.API.csproj|c:\\users\\ilahaah\\desktop\\last-mini-project\\moviereserv.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9D06075-0797-4398-88D4-BDF56D4070F7}|MovieReserv.API\\MovieReserv.API.csproj|c:\\users\\user\\desktop\\last-mini-project\\moviereserv.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9D06075-0797-4398-88D4-BDF56D4070F7}|MovieReserv.API\\MovieReserv.API.csproj|solutionrelative:moviereserv.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,50 +34,68 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MovieService.cs",
-              "DocumentMoniker": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
-              "RelativeDocumentMoniker": "MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
-              "ToolTip": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
-              "RelativeToolTip": "MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAADUAAAAUAAAA",
+              "DocumentIndex": 2,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "MovieReservation.Business\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\ServiceRegistration.cs",
+              "RelativeToolTip": "MovieReservation.Business\\ServiceRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T12:08:42.2Z",
+              "WhenOpened": "2024-09-20T17:16:56.256Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TheaterService.cs",
-              "DocumentMoniker": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\TheaterService.cs",
-              "RelativeDocumentMoniker": "MovieReservation.Business\\Services\\Implementations\\TheaterService.cs",
-              "ToolTip": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\TheaterService.cs",
-              "RelativeToolTip": "MovieReservation.Business\\Services\\Implementations\\TheaterService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAewDYAAAAFAAAA",
+              "Title": "IReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Interfaces\\IReservationService.cs",
+              "RelativeDocumentMoniker": "MovieReservation.Business\\Services\\Interfaces\\IReservationService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Interfaces\\IReservationService.cs",
+              "RelativeToolTip": "MovieReservation.Business\\Services\\Interfaces\\IReservationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T12:08:11.181Z",
+              "WhenOpened": "2024-09-20T18:24:08.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TheatersController.cs",
-              "DocumentMoniker": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReserv.API\\Controllers\\TheatersController.cs",
-              "RelativeDocumentMoniker": "MovieReserv.API\\Controllers\\TheatersController.cs",
-              "ToolTip": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReserv.API\\Controllers\\TheatersController.cs",
-              "RelativeToolTip": "MovieReserv.API\\Controllers\\TheatersController.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAWwBsAAAAtAAAA",
+              "DocumentIndex": 1,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\ReservationService.cs",
+              "RelativeDocumentMoniker": "MovieReservation.Business\\Services\\Implementations\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\ReservationService.cs",
+              "RelativeToolTip": "MovieReservation.Business\\Services\\Implementations\\ReservationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T11:58:28.62Z",
+              "WhenOpened": "2024-09-20T18:24:01.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
+              "RelativeDocumentMoniker": "MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
+              "RelativeToolTip": "MovieReservation.Business\\Services\\Implementations\\MovieService.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAwFcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T17:21:15.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReserv.API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReserv.API\\Program.cs",
               "RelativeDocumentMoniker": "MovieReserv.API\\Program.cs",
-              "ToolTip": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReserv.API\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\last-mini-project\\MovieReserv.API\\Program.cs",
               "RelativeToolTip": "MovieReserv.API\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
