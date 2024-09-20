@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.Business\\MovieReservation.Business.csproj": {}
+    "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\MovieReservation.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.Business\\MovieReservation.Business.csproj": {
+    "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\MovieReservation.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.Business\\MovieReservation.Business.csproj",
+        "projectUniqueName": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\MovieReservation.Business.csproj",
         "projectName": "MovieReservation.Business",
-        "projectPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.Business\\MovieReservation.Business.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.Business\\obj\\",
+        "projectPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\MovieReservation.Business.csproj",
+        "packagesPath": "C:\\Users\\ilahaah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ilahaah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.DATA\\MovieReservation.DATA.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.DATA\\MovieReservation.DATA.csproj"
+              "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.DATA\\MovieReservation.DATA.csproj": {
+                "projectPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.DATA\\MovieReservation.DATA.csproj"
               }
             }
           }
@@ -85,21 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {
+    "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
+        "projectUniqueName": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
         "projectName": "MovieReservation.CORE",
-        "projectPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.CORE\\obj\\",
+        "projectPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj",
+        "packagesPath": "C:\\Users\\ilahaah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ilahaah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,7 +106,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -162,21 +160,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.DATA\\MovieReservation.DATA.csproj": {
+    "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.DATA\\MovieReservation.DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.DATA\\MovieReservation.DATA.csproj",
+        "projectUniqueName": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.DATA\\MovieReservation.DATA.csproj",
         "projectName": "MovieReservation.DATA",
-        "projectPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.DATA\\MovieReservation.DATA.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.DATA\\obj\\",
+        "projectPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.DATA\\MovieReservation.DATA.csproj",
+        "packagesPath": "C:\\Users\\ilahaah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.DATA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ilahaah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,15 +182,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\MiniAPI-MVCProject\\MovieReservation.CORE\\MovieReservation.CORE.csproj"
+              "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj": {
+                "projectPath": "C:\\Users\\ilahaah\\Desktop\\last-mini-project\\MovieReservation.CORE\\MovieReservation.CORE.csproj"
               }
             }
           }
@@ -247,7 +244,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
