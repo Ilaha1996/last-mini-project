@@ -1,0 +1,42 @@
+﻿@using MovieReserv.MVC.Areas.Admin.ViewModels.MovieVM
+@model List<MovieGetVM>
+@{
+    int counter = 0;
+}
+
+<div style="display:flex; justify-content:space-between; align-items:center; padding: 0 530px 0 20px">
+    <h1>Movies</h1>
+    <a asp-action="Create" class="btn btn-success">Create</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Genre</th>
+            <th scope="col">ReleaseDate</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            counter++;
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@movie.Title</td>
+                <td>@movie.Description</td>
+                <td>@movie.Duration</td>
+                <td>@movie.Genre</td>
+                <td>@movie.ReleaseDate</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@movie.Id" class="btn btn-primary">Update</a>
+                    <a asp-action="Delete" asp-route-id="@movie.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

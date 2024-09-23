@@ -1,0 +1,22 @@
+﻿@using MovieReserv.MVC.Areas.Admin.ViewModels.TheaterVM
+@model TheaterUpdateVM
+
+<form method="post" asp-action="Update">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" style="color:red"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Location" class="form-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" style="color:red"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="TotalSeats" class="form-label"></label>
+        <input asp-for="TotalSeats" class="form-control" />
+        <span asp-validation-for="TotalSeats" style="color:red"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Update</button>
+    <a asp-action="index" class="btn btn-primary">Cancel</a>
+</form>

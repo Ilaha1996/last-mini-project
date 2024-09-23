@@ -241,7 +241,6 @@ namespace MovieReservation.DATA.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Duration")
@@ -254,7 +253,7 @@ namespace MovieReservation.DATA.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<double>("Rating")
+                    b.Property<double?>("Rating")
                         .HasColumnType("float");
 
                     b.Property<DateTime>("ReleaseDate")

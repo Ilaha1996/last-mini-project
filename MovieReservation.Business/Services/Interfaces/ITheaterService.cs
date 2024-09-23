@@ -9,6 +9,7 @@ public interface ITheaterService
     Task DeleteAsync(int id);
     Task UpdateAsync(int? id, TheaterUpdateDto dto);
     Task<TheaterGetDto> GetByIdAsync(int id);
+    Task<bool> IsExistAsync(Expression<Func<Theater, bool>> predicate);
     Task<ICollection<TheaterGetDto>> GetByExpressionAsync(Expression<Func<Theater, bool>>? expression = null, bool asNoTracking = false, params string[] includes);
     Task<TheaterGetDto> GetSingleByExpressionAsync(Expression<Func<Theater, bool>>? expression = null, bool asNoTracking = false, params string[] includes);
 }

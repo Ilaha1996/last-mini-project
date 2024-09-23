@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using MovieApp.Business.Services.Interfaces;
 using MovieReservation.Business.DTOs.ShowTimeDTOs;
 using MovieReservation.Business.Exceptions.CommonExceptions;
 using MovieReservation.Business.Services.Interfaces;
@@ -12,19 +13,25 @@ public class ShowTimeService : IShowTimeService
 {
     private readonly IMapper _mapper;
     private readonly IShowTimeRepo _showTimeRepo;
+    private readonly ITheaterService _theaterService;
+    private readonly IMovieService _movieService;
 
-    public ShowTimeService(IMapper mapper, IShowTimeRepo showTimeRepo)
+    public ShowTimeService(IMapper mapper, IShowTimeRepo showTimeRepo, ITheaterService theaterService, IMovieService movieService)
     {
         _mapper = mapper;
         _showTimeRepo = showTimeRepo;
+        _theaterService = theaterService;
+        _movieService = movieService;
     }
     public async Task<ShowTimeGetDto> CreateAsync(ShowTimeCreateDto dto)
     {
+        if (!await _movieService.IsExistAsync(x => x.Id == dto.MovieId && x.IsDeleted == false)) throw new EntityNotFoundException();
+        if (!await _theaterService.IsExistAsync(x => x.Id == dto.TheaterId && x.IsDeleted == false)) throw new EntityNotFoundException();
+        
         ShowTime showTime = _mapper.Map<ShowTime>(dto);
         showTime.CreatedDate = DateTime.Now;
         showTime.UpdatedDate = DateTime.Now;
-        showTime.IsDeleted = false;
-
+     
         await _showTimeRepo.CreateAsync(showTime);
         await _showTimeRepo.CommitAsync();
 
@@ -36,7 +43,7 @@ public class ShowTimeService : IShowTimeService
     public async Task DeleteAsync(int id)
     {
         if (id < 1) throw new InvalidIdException();
-        var data = await _showTimeRepo.GetByIdAsync(id);
+        var data = await _showTimeRepo.GetByExpressionAsync(x => x.Id == id, false, "Theater", "Movie").FirstOrDefaultAsync();
         if (data == null) throw new EntityNotFoundException();
 
         _showTimeRepo.DeleteAsync(data);
@@ -45,12 +52,23 @@ public class ShowTimeService : IShowTimeService
 
     public async Task<ICollection<ShowTimeGetDto>> GetByExpressionAsync(Expression<Func<ShowTime, bool>>? expression = null, bool asNoTracking = false, params string[] includes)
     {
-        var datas = await _showTimeRepo.GetByExpressionAsync(expression, asNoTracking, includes).ToListAsync();
-        if (datas == null) throw new EntityNotFoundException();
+        IQueryable<ShowTime> query = _showTimeRepo.GetByExpressionAsync(expression, asNoTracking);
+        
+        if (includes != null)
+        {
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+        }
+
+        var datas = await query.ToListAsync();
+        if (datas == null || !datas.Any()) throw new EntityNotFoundException();
 
         ICollection<ShowTimeGetDto> dtos = _mapper.Map<ICollection<ShowTimeGetDto>>(datas);
         return dtos;
     }
+
 
     public async Task<ShowTimeGetDto> GetByIdAsync(int id)
     {
@@ -75,6 +93,9 @@ public class ShowTimeService : IShowTimeService
 
     public async Task UpdateAsync(int? id, ShowTimeUpdateDto dto)
     {
+
+        if (!await _movieService.IsExistAsync(x => x.Id == dto.MovieId && x.IsDeleted == false)) throw new EntityNotFoundException();
+        if (!await _theaterService.IsExistAsync(x => x.Id == dto.TheaterId && x.IsDeleted == false)) throw new EntityNotFoundException();
         if (id < 1 || id is null) throw new InvalidIdException();
 
         var data = await _showTimeRepo.GetByIdAsync((int)id);
@@ -85,4 +106,5 @@ public class ShowTimeService : IShowTimeService
         data.UpdatedDate = DateTime.Now;
         await _showTimeRepo.CommitAsync();
     }
+
 }

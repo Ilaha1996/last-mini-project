@@ -599,3 +599,7 @@ C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\obj\Debug\net8.0\scopedc
 C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\obj\Debug\net8.0\MovieRes.BF8531C9.Up2Date
 C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\obj\Debug\net8.0\MovieReserv.API.genruntimeconfig.cache
 C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\obj\Debug\net8.0\ref\MovieReserv.API.dll
+C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\USER\Desktop\last-mini-project\MovieReserv.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

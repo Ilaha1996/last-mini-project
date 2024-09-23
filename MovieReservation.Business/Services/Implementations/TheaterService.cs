@@ -74,6 +74,18 @@ public class TheaterService : ITheaterService
         return dto;
     }
 
+    public async Task<bool> IsExistAsync(Expression<Func<Theater, bool>>? expression = null)
+    {
+        if (expression == null)
+        {
+            return false; 
+        }
+
+        var exists = await _theaterRepo.GetByExpressionAsync(expression).AnyAsync();
+        return exists;
+    }
+
+
     public async Task UpdateAsync(int? id, TheaterUpdateDto dto)
     {
         if (id < 1 || id is null) throw new InvalidIdException();

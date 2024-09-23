@@ -31,7 +31,7 @@ namespace MovieReserv.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] MovieCreateDto dto)
+        public async Task<IActionResult> Create(MovieCreateDto dto)
         {
             MovieGetDto movie = null;
             try
@@ -98,7 +98,7 @@ namespace MovieReserv.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromForm] MovieUpdateDto dto)
+        public async Task<IActionResult> Update(int id, [FromBody] MovieUpdateDto dto)
         {
             try
             {
@@ -173,9 +173,5 @@ namespace MovieReserv.API.Controllers
             return Ok();
 
         }
-
-
-
-
     }
 }

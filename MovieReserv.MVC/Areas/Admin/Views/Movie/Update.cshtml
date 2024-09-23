@@ -1,0 +1,33 @@
+﻿@using MovieReserv.MVC.Areas.Admin.ViewModels.MovieVM
+@model MovieUpdateVM
+
+<form method="post" asp-action="Update">
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" style="color:red"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" style="color:red"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Duration" class="form-label"></label>
+        <input asp-for="Duration" class="form-control" />
+        <span asp-validation-for="Duration" style="color:red"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Genre" class="form-label"></label>
+        <input asp-for="Genre" class="form-control" />
+        <span asp-validation-for="Genre" style="color:red"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ReleaseDate" class="form-label"></label>
+        <input asp-for="ReleaseDate" class="form-control" type="date" />
+        <span asp-validation-for="ReleaseDate" style="color:red"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Update</button>
+    <a asp-action="Index" class="btn btn-primary">Cancel</a>
+</form>

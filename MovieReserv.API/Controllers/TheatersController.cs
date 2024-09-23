@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MovieApp.Business.Services.Interfaces;
 using MovieReserv.API.ApiResponse;
 using MovieReservation.Business.DTOs.TheaterDTOs;
 using MovieReservation.Business.Exceptions.CommonExceptions;
-using MovieReservation.Business.Services.Implementations;
 using MovieReservation.Business.Services.Interfaces;
 
 namespace MovieReserv.API.Controllers
@@ -33,7 +31,7 @@ namespace MovieReserv.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] TheaterCreateDto dto)
+        public async Task<IActionResult> Create(TheaterCreateDto dto)
         {
             TheaterGetDto movie = null;
             try
@@ -97,7 +95,7 @@ namespace MovieReserv.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromForm] TheaterUpdateDto dto)
+        public async Task<IActionResult> Update(int id, [FromBody] TheaterUpdateDto dto)
         {
             try
             {

@@ -34,14 +34,16 @@ public class GenericRepo<TEntity> : IGenericRepo<TEntity> where TEntity : BaseEn
     public IQueryable<TEntity> GetByExpressionAsync(Expression<Func<TEntity, bool>>? expression = null, bool asNoTracking = false, params string[] includes)
     {
         var query = Table.AsQueryable();
-        if (includes.Length > 0)
+        if (includes is not null)
         {
-            foreach (var include in includes)
+            if (includes.Length > 0)
             {
-                query = query.Include(include);
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
             }
         }
-
         query = asNoTracking == true ? query.AsNoTracking() : query;
 
         return expression is not null ? query.Where(expression) : query;

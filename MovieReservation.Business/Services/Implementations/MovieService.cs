@@ -5,6 +5,7 @@ using MovieReservation.Business.DTOs.MovieDTOs;
 using MovieReservation.Business.Exceptions.CommonExceptions;
 using MovieReservation.CORE.Entities;
 using MovieReservation.CORE.Repos;
+using MovieReservation.DATA.Repos;
 using System.Linq.Expressions;
 
 namespace MovieReservation.Business.Services.Implementations;
@@ -73,6 +74,17 @@ public class MovieService : IMovieService
         MovieGetDto dto = _mapper.Map<MovieGetDto>(data);
 
         return dto;
+    }
+
+    public async Task<bool> IsExistAsync(Expression<Func<Movie, bool>>? expression = null)
+    {
+        if (expression == null)
+        {
+            return false;
+        }
+
+        var exists = await _movieRepo.GetByExpressionAsync(expression).AnyAsync();
+        return exists;
     }
 
     public async Task UpdateAsync(int? id, MovieUpdateDto dto)
